@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>○ Analizador Lexico ○</title>
+    <link rel="stylesheet" href="analizador.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <img src="img/logoUP.png">
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li>Lenguaje NAO</li>
+                    <li>Lenguajes y Autómatas</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="contenedor">
+        <h1>Analizador Lexico</h1>
+        <div class="ctr-form">
+            <input type="text" id="entrada" class="ipt-entrada" placeholder="Ingrese su entrada">
+            <br>
+            <button class="btn-analizar"
+                onclick="validarEntrada(document.getElementById('entrada').value);">Analizar</button>
+        </div>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Token</th>
+                        <th>Lexema</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="p-td">Reservadas</p>
+                        </td>
+                        <td>
+                            <p id="lexema-reservada"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p-td">Identificador</p>
+                        </td>
+                        <td>
+                            <p id="lexema-identificador"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p-td">Agrupación</p>
+                        </td>
+                        <td>
+                            <p id="lexema-agrupacion"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p-td">Símblos</p>
+                        </td>
+                        <td>
+                            <p id="lexema-simbolo"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p-td">Texto</p>
+                        </td>
+                        <td>
+                            <p id="lexema-texto"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+
+<footer>
+    <div class="container-footer">
+        <div class="footer">
+            <div class="copyright">
+                © 2020 Todos los Derechos Reservados
+            </div>
+            <div class="information">
+                Profra. Diana Beatriz Vazquez Cruz | 2do Corte |
+                181098 Valedo Santiago Rocio
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="fuctionAnalizadorLexico.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</html>
